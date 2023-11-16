@@ -1,0 +1,21 @@
+<!--ASHY BOBAN 23MCA021 16-11-2023 -->
+<html>
+<body>
+<p>How are you</p>
+<button id="change">click</button>
+
+<script>
+var btn=document.getElementById("change")
+let clr="0123456789ABCDEF"
+btn.addEventListener("click",change)
+function change()
+{
+let randcol=''
+for(let i=0;i<6;i++){
+randcol+=clr[Math.floor(Math.random()*16)]
+}
+document.body.style.background="#"+randcol
+}
+</script>
+</body>
+</html>

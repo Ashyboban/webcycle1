@@ -1,0 +1,21 @@
+<!--ASHY BOBAN 23MCA021 3-11-2023 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p id = "p">name is :</p>
+<p id = "a">age is :</p>
+<script>
+var name = prompt("enter your name");
+var dob = new Date(prompt("enter the date of birth"));
+var currentdate = new Date();
+var diff = currentdate.getFullYear()-dob.getFullYear();
+document.getElementById("p").innerHTML=name;
+document.getElementById("a").innerHTML=diff;
+
+</script>
+</body>
+</html>
